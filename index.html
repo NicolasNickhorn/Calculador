@@ -1,35 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Claculadora</title>
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="calculator">
-        <input type="text" name="display" id="display>
-    </div>
-    
-    <div class="buttons">
-        <button onclick="numbers()">1</button>
-        <button onclick="numbers()">2</button>
-        <button onclick="numbers()">3</button>
-        <button onclick="op()">+</button>
+        <div id="display"></div>
 
-        <button onclick="numbers()">4</button>
-        <button onclick="numbers()">5</button>
-        <button onclick="numbers()">6</button>
-        <button onclick="op()">-</button>
+        <div class="buttons">
+            <button onclick="setNumbers(1)" value="1">1</button>
+            <button onclick="setNumbers(2)" value="2">2</button>
+            <button onclick="setNumbers(3)" value="3">3</button>
+            <button onclick="setOperator('+')" value="+">+</button>
 
-        <button onclick="numbers()">7</button>
-        <button onclick="numbers()">8</button>
-        <button onclick="numbers()">9</button>
-        <button onclick="op()">*</button>
-        
-        <button onclick="clear()">C</button>
-        <button onclick="numbers()">0</button>
-        <button onclick="calc()">=</button>
-        <button onclick="op()">/</button>
+            <button onclick="setNumbers(4)" value="4">4</button>
+            <button onclick="setNumbers(5)" value="5">5</button>
+            <button onclick="setNumbers(6)" value="6">6</button>
+            <button onclick="setOperator('-')" value="-">-</button>
+
+            <button onclick="setNumbers(7)" value="7">7</button>
+            <button onclick="setNumbers(8)" value="8">8</button>
+            <button onclick="setNumbers(9)" value="9">9</button>
+            <button onclick="setOperator('*')" value="*">*</button>
+
+            <button onclick="clearDisplay()" value="C">C</button>
+            <button onclick="setNumbers(0)" value="0">0</button>
+            <button onclick="calcResult()" value="=">=</button>
+            <button onclick="setOperator('/')" value="/">/</button>
+        </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
